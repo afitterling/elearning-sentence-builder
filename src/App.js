@@ -85,7 +85,6 @@ class App extends React.Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <span>sp33c.tech</span>
       </div >
     );
   }
