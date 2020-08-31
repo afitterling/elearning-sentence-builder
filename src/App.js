@@ -28,7 +28,7 @@ const data3 = [
 ];
 
 const styleCol = {
-  height: '50rem',
+  height: '70vh',
   display: 'flex',
   alignItems: 'flex-end',
   justifyContent: 'center',
