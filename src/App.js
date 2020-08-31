@@ -16,10 +16,11 @@ const data2 = [
 ];
 
 const styleCol = {
-  height: '30vh',
+  height: '50rem',
   display: 'flex',
   alignItems: 'flex-end',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  lineHeight: '1.25rem'
 };
 
 function App() {
@@ -28,13 +29,13 @@ function App() {
       <Grid>
         <Grid.Row columns={3}>
           <Grid.Column  style={styleCol}>
-            <TextBlock data={data}></TextBlock>
+            <TextBlock pos={0} data={data}></TextBlock>
           </Grid.Column>
           <Grid.Column style={styleCol}>
-            <TextBlock data={data2}></TextBlock>
+            <TextBlock pos={-1} data={data2}></TextBlock>
           </Grid.Column>
           <Grid.Column  style={styleCol}>
-            <TextBlock data={data}></TextBlock>
+            <TextBlock pos={0} data={data}></TextBlock>
           </Grid.Column>
         </Grid.Row>
       </Grid>
