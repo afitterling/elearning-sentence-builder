@@ -15,6 +15,10 @@ const data2 = [
   'U-Bahn'
 ];
 
+const data3 = [
+  'a'
+];
+
 const styleCol = {
   height: '50rem',
   display: 'flex',
@@ -29,13 +33,13 @@ function App() {
       <Grid>
         <Grid.Row columns={3}>
           <Grid.Column  style={styleCol}>
-            <TextBlock pos={0} data={data}></TextBlock>
+            <TextBlock pos={1} data={data}></TextBlock>
           </Grid.Column>
           <Grid.Column style={styleCol}>
-            <TextBlock pos={-1} data={data2}></TextBlock>
+            <TextBlock pos={0} data={data2}></TextBlock>
           </Grid.Column>
           <Grid.Column  style={styleCol}>
-            <TextBlock pos={0} data={data}></TextBlock>
+            <TextBlock pos={0} data={data3}></TextBlock>
           </Grid.Column>
         </Grid.Row>
       </Grid>
