@@ -19,6 +19,8 @@ const data2 = [
   'mit der Straßenbahn',
   'mit dem Auto',
   'mit dem Fahrrad',
+  'einen Stift',
+  'eine Uhr',
   'zu Fuß',
   'ein Fahrrad',
   'kein Fahrrad',
