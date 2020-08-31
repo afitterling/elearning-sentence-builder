@@ -10,7 +10,8 @@ const data = [
   'Sie fährt',
   'Sie fahren',
   'Ich habe',
-  'Ich brauche'
+  'Ich brauche',
+  'Ich gehe'
 ];
 
 const data2 = [
@@ -18,6 +19,7 @@ const data2 = [
   'mit der Straßenbahn',
   'mit dem Auto',
   'mit dem Fahrrad',
+  'zu Fuß',
   'ein Fahrrad',
   'kein Fahrrad',
   'nur fünf Minuten',
