@@ -29,9 +29,9 @@ const data2 = [
 ];
 
 const data3 = [
-  'zur Schule',
-  'zur Arbeit',
-  '(-)'
+  'zur Schule.',
+  'zur Arbeit.',
+  '.'
 ];
 
 const styleCol = {
