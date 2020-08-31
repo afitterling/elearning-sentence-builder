@@ -10,7 +10,17 @@ const data = [
   'Die'
 ];
 
-const styleCol = {height: '100vh'};
+const data2 = [
+  'Schwimmbad',
+  'U-Bahn'
+];
+
+const styleCol = {
+  height: '30vh',
+  display: 'flex',
+  alignItems: 'flex-end',
+  justifyContent: 'center'
+};
 
 function App() {
   return (
@@ -20,8 +30,8 @@ function App() {
           <Grid.Column  style={styleCol}>
             <TextBlock data={data}></TextBlock>
           </Grid.Column>
-          <Grid.Column  style={styleCol}>
-            <TextBlock data={data}></TextBlock>
+          <Grid.Column style={styleCol}>
+            <TextBlock data={data2}></TextBlock>
           </Grid.Column>
           <Grid.Column  style={styleCol}>
             <TextBlock data={data}></TextBlock>
