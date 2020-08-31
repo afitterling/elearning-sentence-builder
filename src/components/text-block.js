@@ -4,7 +4,7 @@ export class TextBlock extends React.Component {
 
 
     style={ 
-        lineHeight: '1.25rem', paddingBottom: (10 - this.props.pos) * 1.25 + 'rem',
+        lineHeight: '1.25rem', paddingBottom: (25 - this.props.pos) * 1.25 + 'rem',
         width: '100%'
     }    
 
