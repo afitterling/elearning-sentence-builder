@@ -5,18 +5,26 @@ import { Grid } from 'semantic-ui-react'
 import { TextBlock } from './components/text-block'
 
 const data = [
-  'Das',
-  'Der',
-  'Die'
+  'Ich fahre',
+  'Du fährst',
+  'Sie fährt',
+  'Sie fahren',
+  'Ich habe'
 ];
 
 const data2 = [
-  'Schwimmbad',
-  'U-Bahn'
+  'mit der U-Bahn',
+  'mit der Straßenbahn',
+  'mit dem Auto',
+  'mit dem Fahrrad',
+  'ein Fahrrad',
+  'kein Fahrrad'
 ];
 
 const data3 = [
-  'a'
+  'zur Schule',
+  'zur Arbeit',
+  '(-)'
 ];
 
 const styleCol = {
@@ -31,12 +39,31 @@ class App extends React.Component {
 
   constructor() {
     super();
-    this.state = { pos1: 0 };
+    this.state = { pos1: 0, pos2: 0, pos3: 0 };
   }
 
   onUpPos1 = () => {
-    console.log('called');
     this.setState({ pos1: this.state.pos1 + 1 })
+  }
+
+  onDownPos1 = () => {
+    this.setState({ pos1: this.state.pos1 - 1 })
+  }
+
+  onUpPos2 = () => {
+    this.setState({ pos2: this.state.pos2 + 1 })
+  }
+
+  onDownPos2 = () => {
+    this.setState({ pos2: this.state.pos2 - 1 })
+  }
+
+  onUpPos3 = () => {
+    this.setState({ pos3: this.state.pos3 + 1 })
+  }
+
+  onDownPos3 = () => {
+    this.setState({ pos3: this.state.pos3 - 1 })
   }
 
   render() {
@@ -45,13 +72,13 @@ class App extends React.Component {
         <Grid>
           <Grid.Row columns={3}>
             <Grid.Column style={styleCol}>
-              <TextBlock pos={this.state.pos1} onUp={this.onUpPos1} data={data}></TextBlock>
+              <TextBlock pos={this.state.pos1} onUp={this.onUpPos1} onDown={this.onDownPos1} data={data}></TextBlock>
             </Grid.Column>
             <Grid.Column style={styleCol}>
-              <TextBlock pos={0} data={data2}></TextBlock>
+              <TextBlock pos={this.state.pos2} onUp={this.onUpPos2} onDown={this.onDownPos2} data={data2}></TextBlock>
             </Grid.Column>
             <Grid.Column style={styleCol}>
-              <TextBlock pos={0} data={data3}></TextBlock>
+              <TextBlock pos={this.state.pos3} onUp={this.onUpPos3} onDown={this.onDownPos3} data={data3}></TextBlock>
             </Grid.Column>
           </Grid.Row>
         </Grid>

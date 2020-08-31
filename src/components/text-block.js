@@ -11,13 +11,6 @@ export class TextBlock extends React.Component {
     componentDidMount(){
     }
 
-    componentDidUpdate(){
-        this.style={ 
-            lineHeight: '1.25rem', paddingBottom: 10 - this.props.pos * 1.25 + 'rem',
-            width: '100%'
-        }    
-    }
-
     render(){
         return (
             <React.Fragment>
