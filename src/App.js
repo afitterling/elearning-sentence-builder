@@ -9,7 +9,8 @@ const data = [
   'Du fährst',
   'Sie fährt',
   'Sie fahren',
-  'Ich habe'
+  'Ich habe',
+  'Ich brauche'
 ];
 
 const data2 = [
@@ -18,7 +19,9 @@ const data2 = [
   'mit dem Auto',
   'mit dem Fahrrad',
   'ein Fahrrad',
-  'kein Fahrrad'
+  'kein Fahrrad',
+  'nur fünf Minuten',
+  'eine ganze Stunde zur Schule'
 ];
 
 const data3 = [
@@ -82,6 +85,7 @@ class App extends React.Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
+        <span>sp33c.tech</span>
       </div >
     );
   }
