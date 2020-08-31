@@ -31,7 +31,7 @@ const data3 = [
 ];
 
 const styleCol = {
-  height: '70vh',
+  height: '100vh',
   display: 'flex',
   alignItems: 'flex-end',
   justifyContent: 'center',
