@@ -27,24 +27,38 @@ const styleCol = {
   lineHeight: '1.25rem'
 };
 
-function App() {
-  return (
-    <div className="App">
-      <Grid>
-        <Grid.Row columns={3}>
-          <Grid.Column  style={styleCol}>
-            <TextBlock pos={1} data={data}></TextBlock>
-          </Grid.Column>
-          <Grid.Column style={styleCol}>
-            <TextBlock pos={0} data={data2}></TextBlock>
-          </Grid.Column>
-          <Grid.Column  style={styleCol}>
-            <TextBlock pos={0} data={data3}></TextBlock>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </div >
-  );
+class App extends React.Component {
+
+  constructor() {
+    super();
+    this.state = { pos1: 0 };
+  }
+
+  onUpPos1 = () => {
+    console.log('called');
+    this.setState({ pos1: this.state.pos1 + 1 })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Grid>
+          <Grid.Row columns={3}>
+            <Grid.Column style={styleCol}>
+              <TextBlock pos={this.state.pos1} onUp={this.onUpPos1} data={data}></TextBlock>
+            </Grid.Column>
+            <Grid.Column style={styleCol}>
+              <TextBlock pos={0} data={data2}></TextBlock>
+            </Grid.Column>
+            <Grid.Column style={styleCol}>
+              <TextBlock pos={0} data={data3}></TextBlock>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </div >
+    );
+  }
+
 }
 
 export default App;
